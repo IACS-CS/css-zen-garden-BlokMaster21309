@@ -1,0 +1,13 @@
+<svg>
+  <defs>
+    <filter id='projector' x='0.9%' y='0%' width='500%' height='100%'>
+      <feTurbulence in='SourceGraphic' type='fractalNoise' result='turbulence' />
+      <feDisplacementMap in='SourceGraphic' in2='turbulence' result='displaced' />
+      <feGaussianBlur in='displaced' stdDeviation='100,0' result='faded-smudge' />
+      <feMerge>
+        <feMergeNode in='faded-smudge' /> <!-- The smudge is the bottom layer -->
+        <feMergeNode in='SourceGraphic' /> <!-- The clean original is the top layer -->
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
