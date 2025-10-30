@@ -1,6 +1,6 @@
 /********************************** 
-* Design by:  [@BlokMaster21309]
-* Design name:  [␀�␀ Display Error ␀�␀]
+* Design by:	[@BlokMaster21309]
+* Design name:	[␀�␀ Display Error ␀�␀]
 * 
 * License: [license name - e.g. MIT if you want to let others
 * use the design with attribution, or All Rights Reserved if you
@@ -19,41 +19,62 @@
 /* Get your own import URL from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-div *:hover {
-  filter: url('data:image/svg+xml,\
-  <svg xmlns="http://www.w3.org/2000/svg">\
-    <filter id="wet">\
-      <feTurbulence type="fractalNoise" baseFrequency="0.03 0.03" numOctaves="2" result="turbulence" />\
-      <feGaussianBlur in="turbulence" stdDeviation="1" result="smudge-map" />\
-      <feDisplacementMap in="SourceGraphic" in2="smudge-map" scale="13" xChannelSelector="R" yChannelSelector="G" result="displaced" />\
-      <feGaussianBlur in="displaced" stdDeviation="0.7" result="smeared" />\
-      <feMerge>\
-        <feMergeNode in="smeared" />\
-      </feMerge>\
-    </filter>\
-  </svg>#wet');
+:root {
+	background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCACAAIADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5/ooooAKKKKACiigcmgD7LPTngdz6VTilWSd12nMbYPII6A8/n39PTGbJc4MQxhW5Oc54/p0/A0yvz7NM5r1ak6UXaG2n5nrYbDQUVKS1InDQxxJAibFwoTGNq5Ht0A7fqKtgDCtjGR+Xt9ahqKcStGBE4U7huyNwK554z1x3qMqzirhpxpyd4X1NK+GjV12Z8gYoNfTFfM9focZKcVJbM8aUXF2YlGaDRTEFFFFABRRRQAUUUUAFffxGRS0UmrqwHMro1xLKCvlrCR94kk9Ow7/n+ean/wCEdP8Az8D/AL4/+vW9RXj/ANg4G7bj+J0fW6q2Zhf8I8f+fkf98f8A16Z/YckcobzQyg9l5/L/AAroKMUf2Dgf5PxH9bq9zLEZijVDnAHGTmvhavv2ivWpwjTgoR2RzNtu7PgGiiirAKKKKACiiigAooooA+/6KKKACiiigApKWkoAWiiigD4Ar7/or4AoAKKKKACiiigAoor7+oAKKKKAFor4AooA+/6K+AKKAPv+ivgCvv8AoAKKKKAPgCiiigAooooAK+/q+Aa+/qAFooooA+AKKKKACiiigAr7/r4Ar7/oAKKKKAPgCiiigAooooAK+/q+AaKAPv6iiigD4BooooAKKKKACvv+kpaACiiigD4AooooAKKKKACiiigD7/ooooAKKKKACiiigAooooAK+AKKKACiiigAooooAKKKKAPv6iiigD4Br7/r4AooA+/6K+AK+/6ACiiigD4AooooAKKKKAP/2Q==");
+	cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFgUlEQVR4AexWS0icVxT+7hhrNMYiRYlUTGMwCW0NShONbYyTByTZBEJiCEFMIIvgquiiCxWp0OJGtF1IWu0i2MZWEYVCQcH3+41KsYi1ag061aqtbx317/1O/KczxtRaE7rJMOe+7/m+e+455/4W/M+/VwReWeCFW2BhYcFoa2szenp6jKamJmMnH98zgenpaaO5udlob283ent7ja6uLqysrGB2dhZnz57dCR97JjA5OYm1tTUsLy/j5MmTuHnzJu7evYvY2Fg0Njais7PTaGlpea4l9kRAgxoTExOIjo7GpUuXUFxcDJvNhsHBQYyPjwuxxcVFREVFPdcS/4kAgQcGBgwvLy9R7O7uLha4ceMG5ufn0d3dDY5ZrVZcuXIFdXV1aGho2NYKuyagzc37RkhIiJw2ODhYTkomdrtdwMPDw5GXlyfjJHTgwAEYhoGCgoJnSOyKAMG1w4nJy8rK4Ofnh9HRUWILQGtrq8wVFhbi3r17Ms7Cx8eHFeLj46V2Lv4VAX0yQ98rvV0AtFPh8uXLokeHnZh43759iImJQXp6Om7duiVzLBgR9Ae2q6urUVpa6mKFHQmsrq7Si3H06FGcP38eVBIZGUl9OHPmDC5cuCD3zYH19XWkpaVhbGwMtBRDUoenkE5OTuYS3L59W2qz+EcCPPn+/ftFQUlJCXQfVqtV9iqloONe2jx9bW0tCNbR0YHAwEDJAadOnZK9RUVFYqWAgAAcPHhQ9piFxWxsrbXpDILzPulA169flyVKKSil5I4ZYnodlpaWZC4iIgKnT59GUlISaI2NjQ3xDeYELqAeHoJtU7YlQLMTvLy8XBKLuVgphfz8fFGam5srZuapmQe4xmKxyFxmZia7LkKSzBFubm4u488QYIx7eHigsrISFy9elMVUrJRCVVUV4uLixNRcw1R77tw5MBllrb+LjUdj8P52Aj7fTSCgeFLkne+n8N4P0w7Tz83NiU6zcCGgWRqenp7IyckRh+MipZQAzszMICgoCLxvmlo/NGJmRgPDMcntR3wZacHCmoE5uwHb0oZI359r6Jq2o6amRq6O10K9pggBzcro6+szvL29QdMmJCQgIyOD2Qv19fXifL6+vjh27Bjc8scQ1/AHyr1Cob7+DWV3HsGia1Mh65iCJ6yEEEnVHxmQPi3GbCmdzcLCenh4GFNTU+D93L9/H0wodDr2o4dCEDVwRIPY8HhwAWsbwDe/LOPjnnkHwBf65H3+x/H2RD8IdufzIKpFwYe/yhg71IN8G1JTU9l1iBAIDQ1VDB3e+1cDv6PHNxh1ljfw/s/BjoUPIyyYXZ0DwXhCCicJagr7zvJJypJ0BVxaQFhY2GbraSUE2GRG4ynMNPWgVR9VT5gmNEFYUzGFbSqn6KWOP8dpCQ6YcyRMXQ9/sqGiosKE+ft7wN/fX8zFzRQqoLBNRSS3VTjONRSGIp9kRklKSorkfROc62rvBLISoeNKQxcOC2gCiumWIKmfeoKbnYUWIRln0fsl0xE8KyuLX0JqZGRE6edXDQ0NqcEPFnDoozAoLnQShrXZdRDgwIr+lGJN8/JUW4VAVqsVV69exbVr1yRP8CNE71E6+23F4fuhdPJRanOGh9BrJZRZU1wIMLXyhATiy0aTMhnxEeJYYmIiY1/pN17pvKB0xlT6E2xTPdW5yrx93VD5NiP68ROJGHP2s+4R9Pf3ix+4EGAe4OvGpKEThtIWERD9HUAQlZ2dzdrUs2NdbZuFoGyzkgfisAuBw4cPK/1YKG3mXQFR0Xbi5+Euw84OKAO6UOophAsBPf5C/7P2dRfTOytn2LP/UgkEzY0jMfwt4jjkwXF/afO5ZuOlEjhx4oTSjq2WYl8nFhB/SJ7rN71eozPL2F8AAAD//1Qz8AYAAAAGSURBVAMAx37KMBRb9+MAAAAASUVORK5CYII=") 30 30, auto;
+}
+
+a {
+	cursor: url("data:image/png;base64,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") 15 27, pointer
 }
 
 .page-wrapper {
-  /* Main font */
-  font-family: Poppins, sans-serif;
+	/* Main font */
+	font-family: Poppins, sans-serif;
 }
 section {
-  /* Header font */
-  font-family: "Dancing Script", cursive;
-  }
+	/* Header font */
+	font-family: "Dancing Script", cursive;
+	}
 
 /* Background */
 #css-zen-garden {
-  background: linear-gradient(45deg, #f3f3f3 0%, #c8c8c8 100%);
+	background: linear-gradient(45deg, #f3f3f3 0%, #c8c8c8 100%);
 }
 /* Page wrapper */
 .page-wrapper {
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ccc;
-  padding: 1em;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  max-width: 960px;
-  margin: 0 auto;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid #ccc;
+	padding: 1em;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+div *:hover {
+	filter: url('data:image/svg+xml,\
+	<svg xmlns="http://www.w3.org/2000/svg">\
+		<filter id="wet">\
+			<feTurbulence type="fractalNoise" baseFrequency="0.03 0.03" numOctaves="2" result="turbulence" />\
+			<feGaussianBlur in="turbulence" stdDeviation="1" result="smudge-map" />\
+			<feDisplacementMap in="SourceGraphic" in2="smudge-map" scale="13" xChannelSelector="R" yChannelSelector="G" result="displaced" />\
+			<feGaussianBlur in="displaced" stdDeviation="0.5" result="smeared" />\
+		</filter>\
+	</svg>#wet');
+}
+
+a {
+	filter: url('data:image/svg+xml,\
+	<svg xmlns="http://www.w3.org/2000/svg">\
+		<filter id="projector" x="0%" y="0%" width="500%" height="100%">\
+		<feTurbulence in="SourceGraphic" type="fractalNoise" result="turbulence"/>\
+		<feDisplacementMap in="SourceGraphic" in2="turbulence" result="displaced"/>\
+		<feGaussianBlur in="displaced" stdDeviation="100,0" result="faded-smudge"/>\
+		<feMerge>\
+			<feMergeNode in="faded-smudge" />\
+			<feMergeNode in="SourceGraphic" />\
+		</feMerge>\
+	</filter>\
+</svg>#projector');
 }
