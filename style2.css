@@ -9,7 +9,7 @@
 * - Tom Hinkle for the idea
 * - Font CartWrite (shortend to "c" in my code to make things easier) and https://www.fontsquirrel.com/tools/webfont-generator to convert it to be usable in CSS
 * - hand from shutterstock
-* - 
+* - other images from https://www.myfreetextures.com/
 * - 
 * - 
 * - 
@@ -33,26 +33,27 @@
 }
 
 .page-wrapper {
-	background-image: url(./media/background.jpg);
+	background-image: url("./media/background.jpg");
 	font-family: "c", normal;
 	color: #00000099;
+	width: 666px;
+}
+
+header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 60vw;
+	font-size: 30px;
 }
-header {
-	display: flex;
-	align-items: center;
-	font-size: 40px;
+
+header h1 {
 	letter-spacing: 10px;
-	display: block;
-	padding-top: 50px;
 }
 
 header h1::after{
-	align-self: center;
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	content: "";
 	width: 450px;
 	height: 450px;
@@ -61,23 +62,25 @@ header h1::after{
 	filter: sepia();
 }
 
-header h2::before {
-	display: inline-block;
-	content: "";
-	height: 50px;
-	width: 100px;
-	background-image: url("./media/handright.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	filter: sepia();
+header h2 {
+	font-size: 50px;
+	letter-spacing: 1px;
 }
 
+header h2::before {
+	background-image: url("./media/handright.png");
+	margin-right: 5px;
+}
 header h2::after {
+	background-image: url("./media/handleft.png");
+	margin-left: 4px;
+}
+header h2::before,h2::after{
 	display: inline-block;
 	content: "";
-	height: 50px;
-	width: 100px;
-	background-image: url("./media/handleft.png");
+	height: 30px;
+	width: 60px;
+	opacity: 80%;
 	background-repeat: no-repeat;
 	background-size: contain;
 	filter: sepia();
